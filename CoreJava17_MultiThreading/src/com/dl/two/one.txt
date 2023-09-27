@@ -1,0 +1,45 @@
+//without notify and wait
+: 01 Object A reference com.dl.two.A@626b2d4a
+: 02 synchronized block of class B
+0: 04 loop inside synchronized block of class B
+1: 04 loop inside synchronized block of class B
+2: 04 loop inside synchronized block of class B
+3: 04 loop inside synchronized block of class B
+4: 04 loop inside synchronized block of class B
+: 03 Run method of class A
+: 05 synchronized block of class A
+0: 06 loop inside synchronized block of class A
+1: 06 loop inside synchronized block of class A
+2: 06 loop inside synchronized block of class A
+3: 06 loop inside synchronized block of class A
+4: 06 loop inside synchronized block of class A
+
+
+//with wait
+: 01 Object A reference com.dl.two.A@626b2d4a
+: 02 synchronized block of class B
+: 03 Run method of class A
+: 05 synchronized block of class A
+0: 06 loop inside synchronized block of class A
+1: 06 loop inside synchronized block of class A
+2: 06 loop inside synchronized block of class A
+3: 06 loop inside synchronized block of class A
+4: 06 loop inside synchronized block of class A
+
+
+
+//with notify and wait
+: 01 Object A reference com.dl.two.A@626b2d4a
+: 02 synchronized block of class B
+: 03 Run method of class A
+: 05 synchronized block of class A
+0: 06 loop inside synchronized block of class A
+1: 06 loop inside synchronized block of class A
+2: 06 loop inside synchronized block of class A
+3: 06 loop inside synchronized block of class A
+4: 06 loop inside synchronized block of class A
+0: 04 loop inside synchronized block of class B
+1: 04 loop inside synchronized block of class B
+2: 04 loop inside synchronized block of class B
+3: 04 loop inside synchronized block of class B
+4: 04 loop inside synchronized block of class B
